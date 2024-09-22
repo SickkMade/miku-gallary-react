@@ -2,6 +2,7 @@ import UpDownArrows from "./UpDownArrows"
 import PropTypes from "prop-types"
 import VerticalGallary from "./VerticalGallary"
 import { useState } from "react"
+import CreateText from "./CreateText"
 
 function MikuSlider({ data }) {
     /*
@@ -18,7 +19,7 @@ function MikuSlider({ data }) {
 
   return (
     <>
-    <div>MikuSlider</div>
+    <CreateText data={data} imageIndex={imageIndex}/>
     <VerticalGallary data={data} imageIndex={imageIndex} />
     <UpDownArrows setImageIndex={setImageIndex} imageIndex={imageIndex}/>
     </>

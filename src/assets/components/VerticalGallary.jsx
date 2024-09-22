@@ -5,8 +5,8 @@ function VerticalGallary({data, imageIndex}) {
 
   return (
     <div className="verticalgallary">
-        {data.map((innerObject, i) => {
-                return <img style={{transform: `translateY(${imageIndex * -100}%)`}} className="verticalgallary--image" src={innerObject.image} key={"image "+i}/>
+        {data.map((image, i) => {
+                return <img style={{transform: `translateY(${imageIndex * -100}%)`}} className="verticalgallary--image" src={image.image} key={"image "+i}/>
             })}
     </div>
     )

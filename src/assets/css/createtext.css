@@ -1,0 +1,6 @@
+.createtext--main > *{
+    position:absolute;
+}
+.createtext--invisible{
+    visibility:hidden;
+}
