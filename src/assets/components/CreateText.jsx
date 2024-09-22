@@ -1,11 +1,11 @@
 import PropTypes from "prop-types"
 import '../css/createtext.css'
 
-function CreateText({data, imageIndex}) {
+function CreateText({data, imageIndex, appRef}) {
   return (
-    <div className="createtext--main">
+    <div ref={appRef} className="createtext--main" style={{backgroundColor: data[imageIndex].color}}>
         {data.map((innerObject, i) => {
-            return (<div className={imageIndex!=i && 'createtext--invisible'} key={'textContent ' + i}>
+            return (<div className={imageIndex!=i ? 'createtext--invisible' : ''} key={'textContent ' + i}>
                 <h1>{innerObject.header}</h1>
                 <p>{innerObject.description}</p>
             </div>)
@@ -18,6 +18,7 @@ function CreateText({data, imageIndex}) {
 CreateText.propTypes = {
     data: PropTypes.array,
     imageIndex: PropTypes.number,
+    appRef: PropTypes.any,
 }
 
 export default CreateText

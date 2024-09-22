@@ -2,3 +2,19 @@
   width:100vw;
   height:100dvh;
 }
+
+body{
+  margin:0;
+}
+
+.app--active{
+  animation: showContent 1s ease-in-out forwards
+}
+
+@keyframes showContent{
+  from{
+      clip-path: circle(0% at 70% 50%);
+  } to {
+      clip-path: circle(100% at 70% 50%);
+  }
+}

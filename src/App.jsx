@@ -8,7 +8,7 @@ function App() {
       header:"Hatsune Miku",
       description:"Hatsune Miku is a music software developed by Crypton Future Media, INC., which enables anyone to make their computer sing by entering lyrics and melodies. As a massive number of users created music using the software and posted their works on the Internet, Hatsune Miku quickly evolved into a cultural phenomenon. Since then, Hatsune Miku has gained much attention as a character, involved in many fields such as merchandising and live performance as a virtual singer. Now her popularity has spread across the globe.",
       image:"https://piapro.net/intl/images/ch_img_miku.png",
-      color:"blue",
+      color:"lightblue",
     },
     {
       header:"Rin",
@@ -42,9 +42,11 @@ function App() {
     },
   ]
 
+  
+
   return (
     <section id="app--main">
-      <MikuSlider data={testData}/>
+      <MikuSlider  data={testData}/>
     </section>
   )
 }
