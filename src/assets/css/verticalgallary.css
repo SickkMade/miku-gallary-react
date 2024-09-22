@@ -23,6 +23,11 @@
     z-index: -1;
     filter:blur(70px);
 }
+@supports (-moz-appearance: none) {
+    .verticalgallary::after{
+        background-color: rgba(255, 0, 0, 0.4); /* Replace with your desired background style */
+    }
+}
 .verticalgallary--image{
     object-fit: contain;
     max-height:600px;
