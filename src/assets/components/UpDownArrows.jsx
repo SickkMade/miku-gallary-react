@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import '../css/updownarrows.css'
 
-function UpDownArrows({ setImageIndex, imageIndex}) {
+function UpDownArrows({ setImageIndex, imageIndex, setIsMovingUp}) {
 
     const handleUpClick = () => {
         if(imageIndex === 0){
@@ -9,11 +9,13 @@ function UpDownArrows({ setImageIndex, imageIndex}) {
         }
         else{
             setImageIndex(imageIndex-1)
+            setIsMovingUp(true);
         }
     }
 
     const handleDownClick = () => {
         setImageIndex((imageIndex+1) % 6)
+        setIsMovingUp(false);
     }
 
   return (
@@ -27,6 +29,7 @@ function UpDownArrows({ setImageIndex, imageIndex}) {
 UpDownArrows.propTypes = {
     setImageIndex: PropTypes.func,
     imageIndex: PropTypes.number,
+    setIsMovingUp: PropTypes.func,
 }
 
 export default UpDownArrows

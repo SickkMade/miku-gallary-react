@@ -16,12 +16,13 @@ function MikuSlider({ data }) {
     */
 
     const [imageIndex, setImageIndex] = useState(0);
+    const [isMovingUp, setIsMovingUp] = useState(false);
 
   return (
     <>
-    <CreateText data={data} imageIndex={imageIndex}/>
+    <CreateText data={data} imageIndex={imageIndex} isMovingUp={isMovingUp}/>
     <VerticalGallary data={data} imageIndex={imageIndex} />
-    <UpDownArrows setImageIndex={setImageIndex} imageIndex={imageIndex}/>
+    <UpDownArrows setImageIndex={setImageIndex} imageIndex={imageIndex} setIsMovingUp={setIsMovingUp}/>
     </>
   )
 }
