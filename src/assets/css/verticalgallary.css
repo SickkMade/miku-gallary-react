@@ -3,12 +3,25 @@
     flex-flow:column nowrap;
     height:600px;
     width:600px;
-    overflow:hidden;
+    overflow-y:hidden;
 
     position:absolute;
     top:50%;
     left:60%;
     transform: translate(-50%, -50%);
+}
+.verticalgallary::after{
+    content:'';
+    position:absolute;
+    width:45%;
+    height:10%;
+    left:50%;
+    top:70%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem 2rem 5rem 1rem;
+    background-color: rgba(255, 0, 0, 0.8);
+    z-index: -1;
+    filter:blur(70px);
 }
 .verticalgallary--image{
     object-fit: contain;

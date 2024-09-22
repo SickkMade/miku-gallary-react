@@ -28,6 +28,22 @@
     left:5%;
     max-width:35%;
 }
+.createtext--main::before{
+    content:'';
+    position:absolute;
+    width:30%;
+    height:30%;
+    left:20%;
+    top:25%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem 2rem 5rem 1rem;
+    background-color: rgba(255, 0, 0, 0.8);
+    z-index: 11;
+    filter:blur(150px);
+}
 .createtext--instance--textwrapper > h1{
-    font-size: 3rem;
+    font-size: 5rem;
+}
+.createtext--instance--textwrapper > p{
+    font-family:Arial, Helvetica, sans-serif;
 }
