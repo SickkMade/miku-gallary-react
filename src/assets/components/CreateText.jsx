@@ -3,6 +3,7 @@ import '../css/createtext.css'
 
 function CreateText({data, imageIndex, appRef, isMovingUp}) {
     const whichClass = (i) => {
+        //painfully ugly
         if(Math.abs(imageIndex - i) === 1){
             if(isMovingUp && imageIndex - i === -1)
                 return 'createtext--behind'
@@ -17,6 +18,7 @@ function CreateText({data, imageIndex, appRef, isMovingUp}) {
             return 'app--active'
         }
     }
+
   return (
     <div ref={appRef} className="createtext--main" >
         {data.map((innerObject, i) => {

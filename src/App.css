@@ -8,13 +8,20 @@ body{
 }
 
 .app--active{
-  animation: showContent 1s ease-in-out forwards;
+  animation: polygonReveal 2s ease forwards;
 }
 
-@keyframes showContent{
-  from{
-      clip-path: circle(0% at 70% 50%);
-  } to {
-      clip-path: circle(100% at 70% 50%);
+@keyframes polygonReveal {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
   }
 }
+
+
+
+
+
+

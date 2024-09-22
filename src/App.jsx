@@ -20,7 +20,7 @@ function App() {
       header:"Len",
       description:"Len is a male character and his looks feature short blond hair, blue eyes and a school uniform. Len was created together with Rin for the voice synthesizer product “VOCALOID2 Kagamine Rin & Len”, first released on December 27th, 2007. Len’s youthful voice was made from that of Asami Shimoda.",
       image:"https://piapro.net/intl/images/ch_img_len.png",
-      color:"yellow",
+      color:"lightgoldenrodyellow",
     },
     {
       header:"Megurine Luka",
