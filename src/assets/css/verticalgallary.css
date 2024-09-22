@@ -1,0 +1,14 @@
+.verticalgallary{
+    display:flex;
+    flex-flow:column nowrap;
+    height:500px;
+    width:500px;
+    overflow:hidden;
+}
+.verticalgallary--image{
+    object-fit: contain;
+    max-height:500px;
+    max-width:500px;
+
+    transition:transform 500ms ease;
+}
