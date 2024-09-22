@@ -15,7 +15,7 @@ function MikuSlider({ data }) {
         }
     */
 
-    const [imageIndex, setImageIndex] = useState(0);
+    const [imageIndex, setImageIndex] = useState(3);
     const [isMovingUp, setIsMovingUp] = useState(false);
 
   return (

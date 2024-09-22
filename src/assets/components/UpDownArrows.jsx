@@ -22,8 +22,8 @@ function UpDownArrows({ setImageIndex, imageIndex, setIsMovingUp}) {
 
   return (
     <div className="updownarrows">
-        <button className="updownarrows--button" onClick={handleUpClick}><ArrowUp /></button>
-        <button className="updownarrows--button" onClick={handleDownClick}><ArrowDown /></button>
+        <button className="updownarrows--button" onClick={handleUpClick}><ArrowUp color={"white"} size={32} /></button>
+        <button className="updownarrows--button" onClick={handleDownClick}><ArrowDown color={"white"} size={32} /></button>
     </div>
   )
 }

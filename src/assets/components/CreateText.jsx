@@ -18,8 +18,10 @@ function CreateText({data, imageIndex, appRef, isMovingUp}) {
     <div ref={appRef} className="createtext--main" >
         {data.map((innerObject, i) => {
             return (<div className={`createtext--instance ${whichClass(i)}`} style={{backgroundColor: data[i].color}} key={'textContent ' + i}>
-                <h1>{innerObject.header}</h1>
-                <p>{innerObject.description}</p>
+                <div className="createtext--instance--textwrapper">
+                    <h1>{innerObject.header}</h1>
+                    <p>{innerObject.description}</p>
+                </div>
             </div>)
         })}
     </div>

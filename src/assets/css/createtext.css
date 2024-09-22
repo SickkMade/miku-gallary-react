@@ -18,3 +18,16 @@
 .createtext--invisible{
     visibility: hidden;
 }
+.createtext--instance > *{
+    top:5%;
+    left:5%;
+}
+.createtext--instance--textwrapper{
+    position:absolute;
+    top:5%;
+    left:5%;
+    max-width:35%;
+}
+.createtext--instance--textwrapper > h1{
+    font-size: 3rem;
+}
