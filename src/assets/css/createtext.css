@@ -1,6 +1,4 @@
-.createtext--main > *{
-    position:absolute;
-}
+
 .createtext--main{
     width:100%;
     height:100%;
@@ -8,6 +6,12 @@
     pointer-events: none;
     z-index: -1;
 }
+.createtext--instance{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index: 1;
+}
 .createtext--invisible{
-    visibility:hidden;
+    z-index: -1;
 }

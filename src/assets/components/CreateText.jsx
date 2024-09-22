@@ -3,9 +3,9 @@ import '../css/createtext.css'
 
 function CreateText({data, imageIndex, appRef}) {
   return (
-    <div ref={appRef} className="createtext--main" style={{backgroundColor: data[imageIndex].color}}>
+    <div ref={appRef} className="createtext--main" >
         {data.map((innerObject, i) => {
-            return (<div className={imageIndex!=i ? 'createtext--invisible' : ''} key={'textContent ' + i}>
+            return (<div className={`createtext--instance ${imageIndex!=i ? 'createtext--invisible' : 'app--active'}`} style={{backgroundColor: data[i].color}} key={'textContent ' + i}>
                 <h1>{innerObject.header}</h1>
                 <p>{innerObject.description}</p>
             </div>)
