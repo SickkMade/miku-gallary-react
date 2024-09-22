@@ -3,21 +3,16 @@ import '../css/createtext.css'
 
 function CreateText({data, imageIndex, appRef, isMovingUp}) {
     const whichClass = (i) => {
-        //painfully ugly
-        if(Math.abs(imageIndex - i) === 1){
-            if(isMovingUp && imageIndex - i === -1)
-                return 'createtext--behind'
-            else if(!isMovingUp && imageIndex - i === 1)
-                return 'createtext--behind'
-            else{
-                return 'createtext--invisible'
-            }
-        } else if(imageIndex != i) {
-            return 'createtext--invisible'
-        }else{
-            return 'app--active'
+        if (imageIndex === i) return 'app--active';
+        
+        const diff = Math.abs(imageIndex - i);
+        if (diff === 1 && ((isMovingUp && imageIndex < i) || (!isMovingUp && imageIndex > i))) {
+          return 'createtext--behind';
         }
-    }
+      
+        return 'createtext--invisible';
+      };
+      
 
   return (
     <div ref={appRef} className="createtext--main" >

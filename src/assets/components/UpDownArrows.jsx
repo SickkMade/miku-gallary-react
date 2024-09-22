@@ -1,5 +1,7 @@
 import PropTypes from "prop-types"
 import '../css/updownarrows.css'
+import { ArrowUp } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 
 function UpDownArrows({ setImageIndex, imageIndex, setIsMovingUp}) {
 
@@ -20,8 +22,8 @@ function UpDownArrows({ setImageIndex, imageIndex, setIsMovingUp}) {
 
   return (
     <div className="updownarrows">
-        <button className="updownarrows--button" onClick={handleUpClick}>UP</button>
-        <button className="updownarrows--button" onClick={handleDownClick}>DOWN</button>
+        <button className="updownarrows--button" onClick={handleUpClick}><ArrowUp /></button>
+        <button className="updownarrows--button" onClick={handleDownClick}><ArrowDown /></button>
     </div>
   )
 }
