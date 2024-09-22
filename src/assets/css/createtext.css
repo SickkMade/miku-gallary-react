@@ -28,21 +28,22 @@
     left:5%;
     max-width:35%;
 }
-.createtext--main::before{
+.createtext--main::after{
     content:'';
     position:absolute;
     width:30%;
     height:30%;
-    left:20%;
-    top:25%;
+    left:5%;
+    top:10%;
     transform: translate(-50%, -50%);
     border-radius: 1rem 2rem 5rem 1rem;
     background-color: rgba(255, 0, 0, 0.9);
     z-index: 11;
     filter: blur(150px);
+    transform: translate3d(0, 0, 0);
 }
 @supports (-moz-appearance: none) {
-    .createtext--main::before {
+    .createtext--main::after {
         background-color: rgba(255, 0, 0, 0.2); /* Replace with your desired background style */
     }
 }
